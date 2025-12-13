@@ -1,0 +1,15 @@
+# Accept a 5-digit number
+num = input("Enter a 5-digit number: ")
+
+# Check if it is exactly 5 digits and numeric
+if num.isdigit() and len(num) == 5:
+    # Reverse the number
+    reversed_num = num[::-1]
+
+    # Check palindrome
+    if num == reversed_num:
+        print("The number is a numeric palindrome.")
+    else:
+        print("The number is not a numeric palindrome.")
+else:
+    print("Invalid input! Please enter exactly a 5-digit number.")

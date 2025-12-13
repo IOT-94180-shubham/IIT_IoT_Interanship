@@ -1,0 +1,9 @@
+def print_binary(num):
+    if num >= 0:
+        print("Binary representation:", bin(num)[2:])
+    else:
+        print("Binary representation:", "-" + bin(num)[3:])
+
+# Input from user
+number = int(input("Enter a number: "))
+print_binary(number)
